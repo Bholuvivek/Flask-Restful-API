@@ -1,0 +1,83 @@
+/* Reset some default styles */
+body, h1, h2, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the content vertically and horizontally */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Set background color */
+}
+
+/* Style for the main heading */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Set text color */
+}
+
+/* Style for form sections */
+form {
+    background-color: #fff; /* Set background color */
+    border: 1px solid #ccc; /* Add a border */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style for form labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444; /* Set text color */
+}
+
+/* Style for input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for buttons */
+button[type="submit"] {
+    background-color: #007BFF; /* Set button color */
+    color: #fff; /* Set text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Change color on hover */
+}
+
+/* Style for course list section */
+#course-list {
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+/* Style for individual course items */
+#course-list div {
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+/* Style for strong elements within course items */
+#course-list div strong {
+    color: #007BFF;
+}

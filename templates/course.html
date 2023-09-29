@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course List</title>
+    <link rel="text/sheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Course List</h1>
+    <ul>
+        {% for course in data %}
+            <li>
+                {{ course[1] }} - {{ course[2] }}
+                <a href="/edit/{{ course[0] }}">Edit</a>
+                <a href="/delete/{{ course[0] }}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Add a New Course</h2>
+    <form method="POST" action="/addcourse">
+        <label for="course_name">Course Name:</label>
+        <input type="text" id="course_name" name="course_name" required>
+        <br>
+        <label for="course_description">Course Description:</label>
+        <textarea id="course_description" name="course_description" rows="4" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Add Course">
+    </form>
+</body>
+</html>
